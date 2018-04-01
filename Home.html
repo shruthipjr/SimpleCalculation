@@ -1,0 +1,107 @@
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <style>
+    div#mySocial {
+      padding-right: 5%;
+    }
+    .navbar{
+      background: url(background.png) no-repeat center top;
+      font-size: 24px !important;
+      line-height: 1.42857143 !important;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+    }
+    .navbar-default {
+      border-color: #fff;
+    }
+    ul#myNav {
+      margin-left: 10%;
+    }
+    .container.my-context {
+      background-color: rgba(224, 207, 207, 0.79);
+      min-height: 50%;
+    }
+    .logo{
+      border-bottom: 1px solid #E4B46C;
+    }
+  </style>
+</head>
+<script src="js/login.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+<div class="row">
+  <div class="col-md-6 col-md-push-1">
+    <h5>USA</h5>
+  </div>
+  <div id="mySocial" class="pull-right">
+    <i class="icon-facebook"></i>
+    <i class="icon-twitter"></i>
+    <i class="icon-facebook-sign"></i>
+    <i class="icon-instagram"></i>
+  </div>
+</div>
+<div class="row">
+  <div class="text-center logo"><h3><b>Currency Company</b></h3></div>
+</div>
+  <ul id="myNav" class="nav navbar-nav">
+    <li class="active"><a href="./index.php">Bid</a></li>
+  </ul>
+</nav>
+<div class="container my-context">
+<div class="row">
+
+<section>
+  <div>
+  <div class="row">
+  <div style="margin-left: 12%;padding: 1%">
+   </div>
+    <div class="col-md-offset-1"><h2><u>SetUP Alerts</u></h2><br>
+   
+</div>
+    <div class="col-md-6"><hr>
+      <form class="form-horizontal" id="SetUp_form" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
+<!--         <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+            <input type="text" name="email" class="form-control" placeholder="Email">
+          </div>
+        </div> -->
+        
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Currency </label>
+          <div class="col-sm-10">
+            <input type="text" name="currency" class="form-control" placeholder="Currency Name">
+          </div>
+          
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Target</label>
+          <div class="col-sm-10">
+            <input type="text" name="target" class="form-control" placeholder="Target Rate">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <input type="submit" name="SetUp" class="btn btn-success" value="SetUp">
+            <input type="reset" name="clear" class="btn btn-default" value="Clear">
+          </div>
+        </div>
+      </form><hr>
+    </div>
+    </div>
+  </div>
+  </section>
+  </div>  
+</div>
+</body>
+</html>
